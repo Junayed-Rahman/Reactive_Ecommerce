@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<section>
+  <form th:action="@{/login-handler}" th:method="post">
+
+    <form>
+      <div class="mb-3">
+        <label for="name" class="form-label">User Name</label>
+        <input type="text" class="form-control" id="name" th:name="name">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword1" th:name="password">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+  </form>
+</section>
+
+</body>
+</html>

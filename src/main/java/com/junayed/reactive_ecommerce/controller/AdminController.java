@@ -13,4 +13,11 @@ public class AdminController {
         model.addAttribute("title","Admin Panel");
         return "private/AdminPanel";
     }
+
+    @GetMapping("/login")
+    public String showLoginPage(Model model){
+        model.addAttribute("title","Admin Login Page");
+        return "public/AdminLoginPage";
+
+    }
 }

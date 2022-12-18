@@ -19,4 +19,5 @@ public class AdminRepository {
     public Optional<Admin> findAdminById(long id){
         return adminList.stream().filter(admin -> admin.getId() == id).findFirst();
     }
+
 }

@@ -2,9 +2,7 @@ package com.junayed.reactive_ecommerce.entity;
 
 import lombok.*;
 
-@Getter
-@Setter
-@ToString
+@Data
 @AllArgsConstructor
 public class Admin {
     private long id;
